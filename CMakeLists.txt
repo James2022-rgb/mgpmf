@@ -40,10 +40,11 @@ if(NOT TARGET jgpmf_capi)
 
   include(FetchContent)
 
-  # Pin to a specific gpmf_tools revision later (master for bootstrap).
+  # SHA-pinned for reproducibility. Bump when you intentionally
+  # want a newer gpmf_tools.
   FetchContent_Declare(gpmf_tools
     GIT_REPOSITORY https://github.com/James2022-rgb/gpmf_tools.git
-    GIT_TAG        master
+    GIT_TAG        04be67882b3da52e851db65d9f65b26a2eadd773
   )
   FetchContent_GetProperties(gpmf_tools)
   if(NOT gpmf_tools_POPULATED)
