@@ -1,0 +1,26 @@
+# CMake out-of-tree build directories
+build/
+build-*/
+out/
+cmake-build-*/
+
+# FetchContent-populated upstream source + cargo build artifacts
+_deps/
+target/
+**/target/
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Cache files
+.cache/
+compile_commands.json
