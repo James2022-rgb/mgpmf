@@ -44,7 +44,7 @@ if(NOT TARGET jgpmf_capi)
   # want a newer gpmf_tools.
   FetchContent_Declare(gpmf_tools
     GIT_REPOSITORY https://github.com/James2022-rgb/gpmf_tools.git
-    GIT_TAG        04be67882b3da52e851db65d9f65b26a2eadd773
+    GIT_TAG        2b6e57237ceb069603f96cb34ebacec1df3d6ab8
   )
   FetchContent_GetProperties(gpmf_tools)
   if(NOT gpmf_tools_POPULATED)
